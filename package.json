@@ -1,0 +1,46 @@
+{
+  "name": "art-happiness",
+  "description": "art-happiness",
+  "license": "MIT",
+  "repository": "http://www.pixel2html.com",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm install ",
+    "code": "gulp",
+    "build": "gulp release --prod"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-if": "^2.0.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-purifycss": "^0.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-zip": "^4.0.0",
+    "jquery": "^3.2.1",
+    "require-dir": "^0.3.2",
+    "standard": "^10.0.2",
+    "svg4everybody": "^2.1.8",
+    "yargs": "^8.0.1"
+  },
+  "standard": {
+    "globals": [
+      "jQuery",
+      "$",
+      "WebFont",
+      "svg4everybody"
+    ]
+  }
+}

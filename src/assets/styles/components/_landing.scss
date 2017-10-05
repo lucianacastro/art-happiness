@@ -1,0 +1,335 @@
+.herospace {	
+	position: relative;
+	width: 100%;
+	height: 660px;
+	margin-top: -35px;
+	overflow: hidden;
+	&__main-container {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+	}
+	&__background-img {
+		height: 660px;
+		background: url(../images/herospace.png);
+		background-size: cover;
+		background-position: center;
+	}
+	&__title {
+		text-align: center;
+		color: $color__font--white;
+		font-size: 55px;
+	}
+}
+
+.button {
+	display: block;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif; 
+	border-radius: 30px;
+	border: none;
+	&--lg {
+		width: 210px;
+		height: 50px;
+		text-transform: uppercase;
+		font-weight: $font__weight--thin;
+	}
+	&--sm {
+		padding: 5px 21px;
+		font-size: 16px;
+		font-family: 'Montserrat', sans-serif;
+	}
+	&--green {
+		background-color: $color--green;
+		color: $color--white;
+		font-weight: $font__weight--light;
+	}
+	&--deep-green {
+		background-color: $color--green-deep;
+		color: $color--white;
+		font-weight: $font__weight--light;
+	}
+	&--main {
+		margin-top: 40px;
+		font-size: 22px;
+	}
+	&--white {
+		background-color: $color--white;
+	}
+	&--scroll {
+		margin-top: 215px;
+		margin-bottom: 10px;
+		padding: 3px 25px 3px 10px;
+		font-size: 16px;
+		background-color: rgba(255, 255, 255, 0.7);
+		&:after {
+			position: absolute;
+			content: '';
+			width: 20px;
+			height: 20px;
+			background: url(../images/sprite-icons.png);
+			background-position: 55px 1408px;
+		}
+	}
+}
+
+.headline {
+	margin: 40px 0 60px;
+	text-align: center;
+	&__title {
+		margin:  0  0 5px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 21px;
+		color: $color--grey;
+		font-weight: $font__weight--light;
+
+
+	}
+	&__line {
+		display: block;
+		margin: 0 auto;
+		width: 45px;
+		border-top: 2px solid $color--grey;
+	}
+	&__description {
+		margin-top: 5px;
+		color: $color--light-grey;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: $font__weight--light;
+		&--sm {
+			font-size: 16px;
+
+		}
+		&--xs {
+			font-size: 14px;
+		}
+	}
+	&--green {
+		.headline__title,
+		.headline__description {
+			color: $color--green-deep;
+		}
+		.headline__line {
+			border-color: $color--green-deep;
+		}
+	}
+}
+
+.touts-container {
+
+}
+
+.tout {
+	float: left;
+ 	width: calc(100% / 3);
+ 	margin-bottom: 75px;
+ 	text-align: center; 
+}
+
+.tout-header {
+	&__img-container {
+		position: relative;
+		margin: 0 auto;
+		width: 140px;
+		height: 140px;
+		background-color: $color--green-light;
+		border-radius: 30px;
+	}
+	&__img {
+		position: absolute;
+		top: 50%;
+		margin-top: -39px;
+		left: 50%;
+		margin-left: -44px;
+		width: 88px;
+		height: 78px;
+		background: url(../images/sprite-icons.png);
+		
+		&--cam {
+			background-position: 652px 1335px;
+		}
+		&--clock {
+			background-position: 503px 1335px;
+		}
+		&--suitcase {
+			background-position: 355px 1335px;
+		}
+	}
+}
+
+.tout-body {
+	padding: 0 50px;
+	margin: 25px 0;
+	font-family: 'Montserrat', sans-serif;
+	color: $color--grey;
+	&__title {
+		font-size: 24px;
+		font-weight: $font__weight--regular;
+	}
+	&__text {
+		font-size: 15px;
+		font-weight: $font__weight--light;
+	}
+}
+
+.tout-footer {
+
+}
+
+.photo-section {
+	margin: 0 auto 25px;
+	overflow: hidden;
+	&__button-container {
+		display: block;
+		width: 281px;
+		margin: 0 auto;
+		margin-bottom: 60px;
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+	&__button {
+		float: left;
+		margin: 0 auto;
+		padding: 5px 0;
+		border: 1px solid $color--green-deep;
+		background-color: $color--white;
+		font-size: 16px;
+		font-weight: $font__weight--light;
+		text-align: center;
+		text-decoration: none;
+		color: $color--green-deep;
+		box-sizing: border-box;
+
+		&:nth-of-type(1) {
+			border-radius: 30px 0 0 30px;
+		}
+		&:nth-of-type(3) {
+			border-radius: 0 30px 30px 0;
+		}
+		&--active {
+			background-color: $color--green-deep;
+			color: $color--white;
+		}
+		&--start {
+			width: 121px;
+		}
+		&--middle {
+			width: 90px;
+		}
+		&--finish {
+			width: 70px;
+		}
+	}
+	&__container {
+		margin: 0 125px;
+		overflow: hidden;
+	}
+	&__photo {
+		width: calc((100% - 138px) / 5);
+		margin: 0 0 30px 30px;
+		box-sizing: border-box;
+		&:nth-of-type(1),
+		&:nth-of-type(6n) {
+			margin-left: 0;
+		}
+	}
+	&__more-button {
+		margin-bottom: 60px;
+		padding: 10px 35px 10px 15px;
+		text-align: left;
+		&:after {
+			position: absolute;
+			content: '';
+			width: 20px;
+			height: 20px;
+			background: url(../images/sprite-icons.png);
+			background-position: 506px 1406px;
+		}
+	}
+}
+
+.carousel-section {
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 60px;
+
+}
+
+.carousel {
+
+}
+
+.info-ceo {
+	position: relative;
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	overflow: hidden;
+	&__pic {
+		float: left;
+		width: 45px;
+		height: 45px;
+		background: url(../images/sprite-icons.png);
+		background-position: 296px 1423px;
+		border: 2px solid #e1e1e1;
+		border-radius: 50%;
+	}
+	&__container {
+		float: left;
+		margin: 5px 0 0 10px; 
+	}
+	&__name {
+		margin: 0;
+	}
+	&__charge {
+		margin: 0;
+		color: $color--soft-grey;
+	}
+}
+
+
+.client-section {
+	overflow: hidden;
+
+	&__container {
+		margin: 0px 150px 55px;
+		overflow: hidden;
+	}
+
+	&__logo {
+		float: left;
+		width: calc(100% / 4);
+		height: 80px;
+		background: url(../images/sprite-icons.png);
+		
+		&--google {
+			background-position: 226px 1376px;	
+		}
+		&--yahoo {
+			background-position: 226px 1312px;	
+		}
+		&--microsoft {
+			background-position: 226px 1237px;	
+		}
+		&--intel {
+			background-position: 226px 1157px;	
+		}
+		&--qualcomm {
+			background-position: 226px 1060px;	
+		}
+		&--cisco {
+			background-position: 226px 967px;	
+		}
+		&--apple {
+			background-position: 226px 867px;	
+		}
+		&--asus {
+			background-position: 226px 790px;	
+		}
+	}
+}
+
+
+
