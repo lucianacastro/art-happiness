@@ -38,14 +38,13 @@ module.exports = {
   },
   vendor: {
     scssDirectories: [
-      
+      'src/assets/styles/**/*.scss',
+      'src/assets/vendor/**/*.scss',
       
       
     ],
     scriptFiles: [
       './node_modules/jquery/dist/jquery.min.js',
-      
-      
       './node_modules/svg4everybody/dist/svg4everybody.min.js',
       'src/assets/js/vendor/*.js'
     ]
