@@ -367,7 +367,7 @@
 	content: '';
 	width: 25px;
 	height: 25px;
-	left: -50px;
+	left: -40px;
 	top: 0px;
 	background: url(../images/sprite-icons.png);
 	background-position: 415px 1408px;
@@ -655,6 +655,16 @@
 			}
 		}
 	}
+	.carousel {
+		max-width: 240px;
+	}
+	.slick-next:before {
+		right: 0px;
+	}
+	.slick-prev:before {
+		left: 10px;
+	}
+
 	.team-section {
 		margin: 0 80px;
 	}
@@ -755,6 +765,9 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 600px) { 
+	.carousel {
+		max-width: 320px;
+	}
 	.team-section {
 		margin: 0 150px;
 	}
