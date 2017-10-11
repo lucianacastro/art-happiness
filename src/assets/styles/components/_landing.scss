@@ -305,7 +305,6 @@
 	width: 100%;
 	overflow: hidden;
 	padding-bottom: 60px;
-
 }
 
 .carousel {
@@ -349,6 +348,31 @@
 		letter-spacing: 1px;
 	}
 }
+
+/*slick styles*/
+
+.slick-next:before {
+    position: absolute;
+	content: '';
+	width: 25px;
+	height: 25px;
+	right: -50px;
+	top: 0px;
+	background: url(../images/sprite-icons.png);
+	background-position: 360px 1408px;
+}
+
+.slick-prev:before, {
+	position: absolute;
+	content: '';
+	width: 25px;
+	height: 25px;
+	left: -50px;
+	top: 0px;
+	background: url(../images/sprite-icons.png);
+	background-position: 415px 1408px;
+}
+
 
 
 .client-section {
@@ -697,10 +721,15 @@
 	}
 }
 
+@media screen and (max-width: 980px) { 
+	.herospace {	
+		
+	}
+}
+
 
 @media screen and (max-width: 1170px) { 
 	.media-section {
-		
 		&__logo {
 			display: block;
 			margin: 30px auto;

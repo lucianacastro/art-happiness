@@ -16,14 +16,14 @@
     <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="container container--herospace">
+    <div class="container container--herospace" id="main-herospace">
         <header class="header">
             <div class="toggle-button"></div>
             <div class="nav-menu">
-                <a href="" class="nav-menu__button nav-menu__button--active nav-menu__button--home">Home</a>
-                <a href="" class="nav-menu__button nav-menu__button--what">What we do?</a>
-                <a href="" class="nav-menu__button nav-menu__button--testimonial">Testimonial</a>
-                <a href="" class="nav-menu__button nav-menu__button--contact">Contact Us</a>
+                <a href="#main-herospace" id="home-button" class="nav-menu__button nav-menu__button--active nav-menu__button--home">Home</a>
+                <a href="#what-we" id="what-we-button" class="nav-menu__button nav-menu__button--what">What we do?</a>
+                <a href="#testimonials" id="testimonials-button" class="nav-menu__button nav-menu__button--testimonial">Testimonial</a>
+                <a href="#contact-us" id="contact-button" class="nav-menu__button nav-menu__button--contact">Contact Us</a>
             </div>
             <div class="logo"></div>
             <label class="search">
@@ -42,7 +42,7 @@
     </div>
 
     <div class="container">
-        <div class="headline">
+        <div class="headline" id="what-we">
             <h2 class="headline__title">What we do</h2>
             <div class="headline__line"> </div>
             <div class="headline__description">
@@ -135,7 +135,7 @@
     </div>
 
     <div class="container">
-        <div class="headline">
+        <div class="headline" id="testimonials">
             <h2 class="headline__title">Testimonials</h2>
             <div class="headline__line"></div>
             <div class="headline__description">
@@ -146,8 +146,8 @@
    
         <div class="carousel-section">
             <div class="carousel">
-                <div class="carousel__slide">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</div>
-                <div class="carousel__slide">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</div>
+                <div class="carousel__slide">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit."</div>
+                <div class="carousel__slide">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit."</div>
             </div>
             <div class="info-ceo">
                 <div class="info-ceo__pic"></div>
@@ -299,7 +299,7 @@
                 </div>
             </div>
 
-            <div class="contact">
+            <div class="contact" id="contact-us">
                 <div class="headline headline--margin-small">
                     <h2 class="headline__title">Contact us</h2>
                     <div class="headline__line"></div>
@@ -344,7 +344,8 @@
         $(document).ready(function(){
             $('.carousel').slick({
                 dots: true,
-                slidesToshow: 1
+                slidesToshow: 1,
+                arrows: true
             });
         });
     </script>

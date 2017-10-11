@@ -21,6 +21,7 @@ $color--soft-black: #333333;
 $color--black: #222222;
 
 .container {
+	position: relative;
 	width: 100%;
 	max-width: 1170px;
 	overflow: hidden;
@@ -44,21 +45,25 @@ $color--black: #222222;
 
 
 .header {
-	position: relative;
-	width: calc(100% - 60px);
+	position: fixed;
+	width: 100%;
+	max-width: 1170px;
 	height: 35px;
 	overflow: hidden;
-	margin: 0 30px;
+	margin: 0;
 	z-index: 10;
+	&--parallax {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
 }
 
 .toggle-button {
 	display: none;
 	float: left;
-	width: 42px;
-	height: 30px;
+	width: 35px;
+	height: 25px;
 	background-image: url(../images/burger.svg);
-	margin: 5px 5px 0 0;
+	margin: 8px 5px 0 30px;
 	cursor: pointer;
 }
 
@@ -66,7 +71,7 @@ $color--black: #222222;
 	display: none;
 	float: left;
 	width: 50%;
-	margin-top: 10px;
+	margin: 10px 0 0 30px;
 	min-width: 385px;
 	font-family: 'Roboto', sans-serif;
 	&__button {
@@ -76,6 +81,10 @@ $color--black: #222222;
 		text-decoration: none;
 		font-weight: $font__weight--light;
 		opacity: 0.8;
+		&:hover {
+			font-weight: $font__weight--medium;
+			opacity: 1;
+		}
 	}
 	&__button--active {
 		font-weight: $font__weight--regular;
@@ -100,6 +109,7 @@ $color--black: #222222;
 	position: relative;
 	float: right;
 	width: 30%;
+	margin-right: 30px;
 	&:after {
 		display: block;
 		position: absolute;
@@ -136,8 +146,23 @@ $color--black: #222222;
 }
 
 @media screen and (max-width: 980px) {
+	.header {
+		height: auto;
+	}
 	.toggle-button {
 		display: block;
+	}
+
+	.nav-menu {
+		overflow: hidden;
+		width: 100%;
+		&__button {
+			display: block;
+			min-width: 70px;
+			max-width: 100px;
+			margin-top: 10px;
+			text-align: center;
+		}
 	}
 }
 
