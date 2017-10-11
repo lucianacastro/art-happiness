@@ -36,6 +36,12 @@ $(function() {
 	   	}, 600);
 	   	$(".nav-menu").css("display", "none");
 	});
+	$("#scroll-button").click(function() {
+	   	$('html, body').animate({
+	       scrollTop: $("#contact-us").offset().top
+	   	}, 600);
+	   	$(".nav-menu").css("display", "none");
+	});
 
 	/*Mobile*/
 	$(".toggle-button").click(function() { 
