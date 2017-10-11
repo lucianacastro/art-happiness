@@ -148,6 +148,7 @@ $color--black: #222222;
 @media screen and (max-width: 980px) {
 	.header {
 		height: auto;
+		min-height: 35px;
 	}
 	.toggle-button {
 		display: block;
