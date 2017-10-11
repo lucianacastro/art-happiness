@@ -188,12 +188,24 @@
 		
 		&--cam {
 			background-position: 652px 1335px;
+			transition: 0.5s ease-out;
+			&:hover {
+				background-position: 652px 1222px;
+			}
 		}
 		&--clock {
 			background-position: 503px 1335px;
+			transition: 0.5s ease-out;
+			&:hover {
+				background-position: 503px 1222px;
+			}
 		}
 		&--suitcase {
 			background-position: 355px 1335px;
+			transition: 0.5s ease-out;
+			&:hover {
+				background-position: 355px 1222px;
+			}
 		}
 	}
 }
@@ -297,8 +309,10 @@
 }
 
 .carousel {
-	width: 760px;
+	width: 100%;
+	max-width: 500px;
 	margin: 0 auto;
+	padding: 0 10px;
 	text-align: center;
 	color: #5d5d5d;
 }
@@ -353,13 +367,13 @@
 		background: url(../images/sprite-icons.png);
 		box-sizing: border-box;
 		&--google {
-			background-position: 226px 1376px;	
+			background-position: 216px 1376px;	
 		}
 		&--yahoo {
 			background-position: 226px 1311px;	
 		}
 		&--microsoft {
-			background-position: 226px 1237px;	
+			background-position: 220px 1237px;	
 		}
 		&--intel {
 			background-position: 226px 1157px;	
@@ -411,6 +425,7 @@
 	&__pic {
 		display: block;
 		width: 100%;
+		max-width: 125px;
 		margin: 0 auto;
 
 	}
@@ -573,3 +588,224 @@
 		text-align: center;
 	}
 }
+
+@media screen and (max-width: 335px) {
+	.tag-box {
+		position: relative;
+		display: block;
+		float: none;
+		margin: 0 auto;
+
+		&__pic {
+			display: block;
+			margin: 0 auto;
+			
+		}
+		&__text-container {
+			margin: 0 auto;
+			float: none;
+			overflow: hidden;
+		}
+		&__text {
+			display: block;
+			text-align: center;
+		}
+		&__tag {
+			margin: 0 auto;
+			float: none;
+			max-width: 100px;
+		}
+	}
+} 
+
+@media screen and (max-width: 480px) { 
+	.photo-section {
+		&__photo {
+			width: calc((100% - 35px) / 2);
+			&:nth-of-type(even) {
+				margin-left: 30px;
+			}
+			
+			&:nth-of-type(odd) {
+				margin-left: 0;
+			}
+		}
+	}
+	.team-section {
+		margin: 0 80px;
+	}
+	.tout-member {
+		width: calc(100% - 50px);
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.herospace {
+		&__title {
+			font-size: 42px;
+		}
+	}
+	.headline {
+		padding: 0 10px;
+	}
+
+	.tout {
+		width: 100%;
+	}
+	.photo-section {
+		&__container {
+			margin: 0 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 670px) { 
+	.client-section {
+		overflow: hidden;
+
+		&__container {
+			margin: 0 70px;
+		}
+
+		&__logo {
+			display: block;
+			float: none;
+			width: 100%;
+			max-width: 180px;
+			margin: 0 auto;
+			&--google,
+			&--yahoo,
+			&--microsoft,
+			&--intel,
+			&--qualcomm,
+			&--cisco,
+			&--apple,
+			&--asus {
+				background-position-x: 215px;
+			}
+		}
+	}
+	.about,
+	.recent,
+	.contact {
+		width: calc(100% - 60px);
+	}
+	.tag-box {
+		max-width: 300px;
+		margin: 0 auto 12px;
+	}
+}
+
+
+@media screen and (max-width: 1170px) { 
+	.media-section {
+		
+		&__logo {
+			display: block;
+			margin: 30px auto;
+		}
+	}
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 720px) { 
+	.photo-section {
+		&__photo {
+			width: calc((100% - 69px) / 3);
+			&:nth-of-type(6) {
+				margin-left: 30px;
+			}
+			&:nth-of-type(4),
+			&:nth-of-type(7),
+			&:nth-of-type(10) {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) { 
+	.team-section {
+		margin: 0 150px;
+	}
+	.tout-member {
+		width: calc(100% - 50px);
+		max-width: 100%;
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 720px) { 
+	.tout {
+		width: 50%;
+		&:nth-of-type(3) {
+			width: 100%;
+		}
+	}
+	.team-section {
+		margin: 0 100px;
+	}
+	.tout-member {
+		width: calc((100% - 100px) / 2);
+		max-width: 100%
+	}
+}
+
+
+@media screen and (min-width: 721px) and (max-width: 980px) {
+	.photo-section {
+		&__photo {
+			width: calc((100% - 104px) / 4);
+			&:nth-of-type(5),
+			&:nth-of-type(9) {
+				margin-left: 0;
+			}
+			&:nth-of-type(6) {
+				margin-left: 30px;
+			}
+		}
+	}
+	.team-section {
+		margin: 0 120px;
+	}
+	.tout-member {
+		width: calc((100% - 150px) / 3);
+		max-width: 100%;
+	}
+	
+}
+
+
+@media screen and (min-width: 671px) and (max-width: 800px) {
+	.client-section {
+		overflow: hidden;
+		&__container {
+			margin: 0 90px;
+		}
+		&__logo {
+			width: calc((100% - 120px) / 2);
+			margin: 0 30px;
+		}
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1050px) {
+	.client-section {
+		overflow: hidden;
+		&__logo {
+			width: calc(100% / 3);
+		}
+	}
+	
+}
+
+@media screen and (min-width: 671px) and (max-width: 1000px) {
+	.about,
+	.recent,
+	.contact {
+		width: calc((100% - 120px) / 2);
+	}
+}
+
+
+

@@ -52,7 +52,18 @@ $color--black: #222222;
 	z-index: 10;
 }
 
+.toggle-button {
+	display: none;
+	float: left;
+	width: 42px;
+	height: 30px;
+	background-image: url(../images/burger.svg);
+	margin: 5px 5px 0 0;
+	cursor: pointer;
+}
+
 .nav-menu {
+	display: none;
 	float: left;
 	width: 50%;
 	margin-top: 10px;
@@ -112,7 +123,23 @@ $color--black: #222222;
 	}
 }
 
+@media screen and (min-width: 981px) {
+	.nav-menu {
+		display: block !important;
+	}
+}
 
+@media screen and (max-width: 600px) {
+	.search{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.toggle-button {
+		display: block;
+	}
+}
 
 
 
