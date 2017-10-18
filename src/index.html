@@ -19,6 +19,9 @@
     <div class="container container--herospace" id="main-herospace">
         <header class="header">
             <div class="toggle-button"></div>
+            <label class="search">
+                <input type="text" name="text" placeholder=" Search..." class="search__input">
+            </label>
             <div class="nav-menu">
                 <a href="#main-herospace" id="home-button" class="nav-menu__button nav-menu__button--active nav-menu__button--home">Home</a>
                 <a href="#what-we" id="what-we-button" class="nav-menu__button nav-menu__button--what">What we do?</a>
@@ -26,9 +29,7 @@
                 <a href="#contact-us" id="contact-button" class="nav-menu__button nav-menu__button--contact">Contact Us</a>
             </div>
             <div class="logo"></div>
-            <label class="search">
-                <input type="text" name="text" placeholder=" Search..." class="search__input">
-            </label>
+            
             
         </header>
         <div class="herospace">
@@ -312,8 +313,8 @@
                     </div>
                 </div>
                 <div class="form-contact">
-                    <textarea class="form-contact__textarea" placeholder="Your Name..."></textarea>
-                    <textarea class="form-contact__textarea" placeholder="Your Email..."></textarea>
+                    <input type="text" name="name" class="form-contact__input" placeholder="Your Name...">
+                    <input type="email" name="email" class="form-contact__input" placeholder="Your E-mail...">
                     <textarea class="form-contact__textarea" placeholder="Your Message..."></textarea>
                     <button class="form-contact__button">SEND</button>
                 </div>

@@ -60,11 +60,11 @@ $color--black: #222222;
 
 .toggle-button {
 	display: none;
-	float: left;
-	width: 35px;
-	height: 25px;
+	float: right;
+	width: 30px;
+	height: 21px;
 	background-image: url(../images/burger.svg);
-	margin: 5px 5px 0 30px;
+	margin: 7px 5px 0 30px;
 	cursor: pointer;
 }
 
@@ -140,29 +140,63 @@ $color--black: #222222;
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
+	.search {
+		position: absolute;
+		left: 50%;
+		width: 130px;
+		margin: 0 0 0 -58px;
+	}
+	.search .search__input {
+		width: 100%;
+	}
+	.logo {
+		left: 5px;
+		margin-left: 0;
+	}
+}
+
+@media screen and (min-width: 321px) and (max-width: 660px) {
 	.search{
-		display: none;
+		position: absolute;
+		left: 50%;
+		width: 180px;
+		margin: 0 -85px;
+	}
+	.search .search__input {
+		width: 100%;
+	}
+	.logo {
+		left: 5px;
+		margin-left: 0;
 	}
 }
 
 @media screen and (max-width: 980px) {
 	.header {
 		height: auto;
-		min-height: 35px;
-	}
-	.toggle-button {
-		display: block;
+		min-height: 37px;
 	}
 
+	.search {
+	
+	}
+
+	.toggle-button {
+		display: block;
+
+	}
 	.nav-menu {
 		overflow: hidden;
+		min-width: 100%;
 		width: 100%;
+		margin: 10px 0 0 0;
+		transition: display ease-out 600ms;
 		&__button {
 			display: block;
 			min-width: 70px;
-			max-width: 100px;
-			margin-top: 10px;
+			margin: 0;
+			padding: 5px 0;
 			text-align: center;
 		}
 	}
